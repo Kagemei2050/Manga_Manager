@@ -17,7 +17,7 @@ app.config['SCHEDULER_API_ENABLED'] = True
 scheduler = APScheduler()
 
 # Đường dẫn data
-DATA_PATH = Path("../data")
+DATA_PATH = Path("data")
 
 def natural_sort_key(text):
     """Sắp xếp tự nhiên"""
