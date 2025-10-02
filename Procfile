@@ -1,1 +1,1 @@
-web: python app.py
+web: python -m web_version.app
