@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Manga & Novel Reader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">📚 Thư Viện</h1>
+                <button id="themeToggle" class="btn btn-info">🌓 Đổi Theme</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div id="breadcrumb" class="breadcrumb"></div>
+
+            <!-- Main Screen -->
+            <div id="mainScreen" class="screen active">
+                <div id="seriesGrid" class="series-grid">
+                    <div class="loading">Đang tải...</div>
+                </div>
+            </div>
+
+            <!-- Manga Screen -->
+            <div id="mangaScreen" class="screen">
+                <div id="chapterList" class="chapter-list"></div>
+            </div>
+
+            <!-- Manga Chapter Screen -->
+            <div id="mangaChapterScreen" class="screen">
+                <div id="mangaContent" class="manga-content"></div>
+                <div id="mangaNav" class="navigation"></div>
+            </div>
+
+            <!-- Novel Screen -->
+            <div id="novelScreen" class="screen">
+                <div id="arcList" class="arc-list"></div>
+            </div>
+
+            <!-- Novel Chapter Screen -->
+            <div id="novelChapterScreen" class="screen">
+                <div id="novelContent" class="novel-content"></div>
+                <div id="novelNav" class="navigation"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
